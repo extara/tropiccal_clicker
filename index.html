@@ -11,50 +11,50 @@
 <body>
 <div class="container-fluid">
         <!-- "nav" buttons -->
-        <div class="row">
+        <div class="row mt-2">
             <div class="col-sm-3">
-            <button type="button" class="btn-warning btn-left">Przycisk na kiedyś</button>
+            <button type="button" class="btn btn-warning btn-sm btn-left ms-4">Przycisk na kiedyś</button>
             </div>       
             <div class="col-sm-6"></div>
-            <div class="col-sm-3">
-            <button type="button" class="btn-warning btn-right">Przycisk na kiedyś</button>
+            <div class="col-sm-3 d-grid justify-content-md-end">
+            <button type="button" class="btn btn-warning btn-sm btn-right me-4">Przycisk na kiedyś</button>
             </div>
         </div>
         <!-- Game buttons -->
         <div class="row mt-5">
             <div class="col-sm-9"></div>
-            <div class="col-sm-3">
-            <button type="button" class="btn-play" id="x1" onclick="PlusOne()">Klik +1<br>Koszt: 100$</button>
+            <div class="col-sm-3 d-grid justify-content-md-end">
+            <button type="button" class="btn btn-primary btn-buy me-4" id="x1" onclick="PlusOne()">Klik +1<br>Koszt: 100$</button>
             </div>
         </div>       
         <div class="row mt-4">
             <div class="col-sm-9"></div>
-            <div class="col-sm-3">
-            <button type="button" class="btn-warning btn-play" id="x2" onclick="PlusTwo()">Klik +2<br>Koszt: 300$</button>
+            <div class="col-sm-3 d-grid justify-content-md-end">
+            <button type="button" class="btn btn-primary btn-buy me-4" id="x2" onclick="PlusTwo()">Klik +2<br>Koszt: 300$</button>
             </div>
         </div>        
         <div class="row mt-4">
             <div class="col-sm-9"></div>
-            <div class="col-sm-3">
-            <button type="button" class="btn-warning btn-play" id="x5" onclick="IdleFive()">Coś x5<br>Koszt: 500$</button>
+            <div class="col-sm-3 d-grid justify-content-md-end">
+            <button type="button" class="btn btn-primary btn-buy me-4" id="x5" onclick="IdleFive()">Coś x5<br>Koszt: 500$</button>
             </div>
         </div>
         <div class="row mt-4">
             <div class="col-sm-9"></div>
-            <div class="col-sm-3">
-            <button type="button" class="btn-warning btn-play" id="x10" onclick="IdleTen()">Coś x10<br> Koszt: 1000$</button>
+            <div class="col-sm-3 d-grid justify-content-md-end">
+            <button type="button" class="btn btn-primary btn-buy me-4" id="x10" onclick="IdleTen()">Coś x10<br> Koszt: 1000$</button>
             </div>
         </div>
         <div class="row mt-4">
             <div class="col-sm-9"></div>
-            <div class="col-sm-3">
-            <button type="button" class="btn-warning btn-play" id="x20" onclick="IdleTwenty()">Coś x20<br> Koszt: 2000$</button>
+            <div class="col-sm-3 d-grid justify-content-md-end">
+            <button type="button" class="btn btn-primary btn-buy me-4" id="x20" onclick="IdleTwenty()">Coś x20<br> Koszt: 2000$</button>
             </div>
         </div>
     <!-- Clickable area -->
     <div class="row">
         <div class="col-6">
-            <h1 id="money">Cash: 0$</h1>
+            <h1 id="money" class="ms-4">Cash: 0$</h1>
         </div>
         <div class="col-6">
             <div class="clicker" onclick="MoneyClicks()"></div>

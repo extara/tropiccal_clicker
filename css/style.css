@@ -1,8 +1,23 @@
-.btn-play{
-    background-color: darkblue;
-    color: white;
+html {
+    width: 100%;
+    height: 100%;   
+}
+
+body {
+    background-image: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgb(241, 241, 241) 59%, rgb(230, 230, 230) 100%);
+}
+
+.btn-buy{
     width: 150px;
 }
+
+.btn-buy:focus, .btn-buy:active:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    background-color: #0d6efd;
+  }
+
 .clicker{
     height: 50px;
     width: 50px;
