@@ -1,4 +1,4 @@
-var cash = 55555;
+var cash = 0;
 var MoneyPerClick = 1;
 var CurrentIdleMoney = 0;
 var BalanceAfterClick = document.getElementById("money");
@@ -119,18 +119,18 @@ var IdleTwentyCost = 80000;
 var Idlex20Target = 200;
 function IdleTwenty()
 {
-    var Idle10 = document.getElementById("x10");
-    var IdleMoneyx61 = 61;
-    if (cash < IdleFiveCost){
+    var Idle20 = document.getElementById("x20");
+    var IdleMoneyx140 = 140;
+    if (cash < IdleTwentyCost){
         alert('Nie masz wystarczającej ilości środków');
     }
     else{
-        cash = cash - IdleTenCost;
+        cash = cash - IdleTwentyCost;
         BalanceAfterClick.innerHTML = "Cash: " + Math.round(cash * 100) / 100 + "$";
-        CurrentIdleMoney = CurrentIdleMoney + IdleMoneyx61;
-        IdleTenCost = Math.ceil(CurrentIdleMoney * 10 + IdleTenCost);
+        CurrentIdleMoney = CurrentIdleMoney + IdleMoneyx140;
+        IdleTwentyCost = Math.ceil(CurrentIdleMoney * 10 + IdleTwentyCost);
         DisplayCashSec.innerHTML = "Cash co sekundę: " + Math.round(CurrentIdleMoney * 100) / 100 + "$";
-        Idle10.innerHTML = "Idle +1 <br> Koszt: " + IdleTenCost + "$";
+        Idle20.innerHTML = "Idle +1 <br> Koszt: " + IdleTwentyCost + "$";
         if (CurrentIdleMoney > IdleTarget){
             alert("You getting free + " + Math.ceil(IdleTarget/3) + "$ Per second");
             CurrentIdleMoney = Math.ceil(CurrentIdleMoney + IdleTarget/3);
@@ -138,6 +138,7 @@ function IdleTwenty()
         }
     }
 }
+
 
 
 setTimeout(start, 1000);
