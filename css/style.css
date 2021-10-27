@@ -23,3 +23,12 @@ body {
     width: 50px;
     background-color: red;
 }
+
+@media (max-width: 576px) {
+    .btn-buy {
+      width: 100px;
+      height: 55px;
+      font-size: 13px;
+      padding: 0;
+    }
+  }

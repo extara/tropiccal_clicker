@@ -12,55 +12,42 @@
 <div class="container-fluid">
         <!-- "nav" buttons -->
         <div class="row mt-2">
-            <div class="col-6 d-grid justify-content-md-start">
-            <button type="button" class="btn btn-warning btn-sm btn-left ms-sm-4">Przycisk na kiedyś</button>
+            <div class="col-6 d-grid justify-content-start">
+            <button type="button" class="btn btn-warning btn-sm ms-2">Przycisk na kiedyś</button>
             </div>       
-            <div class="col-6 d-grid justify-content-md-end">
-            <button type="button" class="btn btn-warning btn-sm btn-right me-sm-4">Przycisk na kiedyś</button>
+            <div class="col-6 d-grid justify-content-end">
+            <button type="button" class="btn btn-warning btn-sm me-2">Przycisk na kiedyś</button>
             </div>
         </div>
         <!-- Game buttons -->
-        <div class="row mt-sm-5">
-            <div class="col-sm-9"></div>
-            <div class="col-sm-3 d-grid justify-content-md-end">
-            <button type="button" class="btn btn-primary btn-buy me-4" id="x1" onclick="PlusOne()">+0.1<br>Koszt: 30$</button>
+        <div class="row mt-4 mt-sm-5">
+            <div class="col-12 d-grid justify-content-end">
+            <button type="button" class="btn btn-primary btn-buy me-2 mb-2 mb-sm-3" id="x1" onclick="PlusOne()">+0.1<br>Koszt: 30$</button>
             </div>
-        </div>       
-        <div class="row mt-4">
-            <div class="col-sm-9"></div>
-            <div class="col-sm-3 d-grid justify-content-md-end">
-            <button type="button" class="btn btn-primary btn-buy me-4" id="x2" onclick="PlusTwo()">+1<br>Koszt: 80$</button>
+            <div class="col-12 d-grid justify-content-end">
+            <button type="button" class="btn btn-primary btn-buy me-2 mb-2 mb-sm-3" id="x2" onclick="PlusTwo()">+1<br>Koszt: 80$</button>
             </div>
-        </div>        
-        <div class="row mt-4">
-            <div class="col-sm-9"></div>
-            <div class="col-sm-3 d-grid justify-content-md-end">
-            <button type="button" class="btn btn-primary btn-buy me-4" id="x5" onclick="IdleFive()">+9<br>Koszt: 200$</button>
+            <div class="col-12 d-grid justify-content-end">
+            <button type="button" class="btn btn-primary btn-buy me-2 mb-2 mb-sm-3" id="x5" onclick="IdleFive()">+9<br>Koszt: 200$</button>
             </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-sm-9"></div>
-            <div class="col-sm-3 d-grid justify-content-md-end">
-            <button type="button" class="btn btn-primary btn-buy me-4" id="x10" onclick="IdleTen()">+61<br> Koszt: 15000$</button>
+            <div class="col-12 d-grid justify-content-end">
+            <button type="button" class="btn btn-primary btn-buy me-2 mb-2 mb-sm-3" id="x10" onclick="IdleTen()">+61<br> Koszt: 15000$</button>
             </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-sm-9"></div>
-            <div class="col-sm-3 d-grid justify-content-md-end">
-            <button type="button" class="btn btn-primary btn-buy me-4" id="x20" onclick="IdleTwenty()">+140<br> Koszt: 80000$</button>
+            <div class="col-12 d-grid justify-content-end">
+            <button type="button" class="btn btn-primary btn-buy me-2 mb-2 mb-sm-3" id="x20" onclick="IdleTwenty()">+140<br> Koszt: 80000$</button>
             </div>
         </div>
     <!-- Clickable area -->
-    <div class="row">
-        <div class="col-6">
-            <h1 id="money" class="ms-4">Cash: 0$</h1>
+    <div class="row mt-5">
+        <div class="col-5">
+            <h1 id="money" class="ms-2">Cash: 0$</h1>
         </div>
-        <div class="col-6">
-            <div class="clicker" onclick="MoneyClicks()"></div>
+        <div class="col-2">
+            <div class="clicker mx-auto" onclick="MoneyClicks()"></div>
         </div>
     </div>
     <!--- Counter -->
-    <div class="row">
+    <div class="row mt-4">
         <div class="col-12 text-center">
             <h1 id="perclick">Cash za kliknięcie: 1$</h1>
             <h1 id="persec">Cash co sekundę: 0$</h1>
