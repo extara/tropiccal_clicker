@@ -40,8 +40,19 @@
             <button type="button" class="btn btn-warning btn-sm ms-2">Przycisk na kiedyś</button>
             </div>       
             <div class="col-6 d-grid justify-content-end">
-            <button type="button" class="btn btn-warning btn-sm me-2">Przycisk na kiedyś</button>
-            </div>
+            <button type="button" class="btn btn-warning btn-sm me-2" onclick="login()">Zaloguj sie</button>
+            </div>    
+            
+<!-- Login hidden box -->            
+<div class="text-center login_box" id="login_box">
+    <h1 class="d-flex flex-row-reverse" style="color: red; cursor: pointer;" onclick="login_hide()">X</h1>
+    <form style="padding: 100px">
+        <input type="text" name='login'><br>
+        <input type="password" name='haslo'><br>
+        <button type="submit">Zaloguj</button>
+    </form>
+</div>
+            
         </div>
         <!-- Game buttons -->
         <div class="row mt-4 mt-sm-5">

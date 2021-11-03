@@ -32,6 +32,14 @@ nav {
     background-color: red;
 }
 
+.login_box{
+    position: absolute;
+    background-color: rgba(0,0,0,0.85);
+    height: 50vh;
+    overflow: hidden;
+    visibility: hidden;
+}
+
 @media (max-width: 576px) {
     .btn-buy {
       width: 100px;

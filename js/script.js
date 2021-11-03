@@ -6,6 +6,15 @@ var DisplayCash = document.getElementById("perclick");
 var DisplayCashSec = document.getElementById("persec");
 
 
+function login(){
+    var login_box = document.getElementById("login_box");
+    login_box.style.visibility = "visible";    
+    console.log('elo');
+}
+function login_hide(){
+    var login_box = document.getElementById("login_box");
+    login_box.style.visibility = "hidden";   
+}
 
 function MoneyClicks()
 {
