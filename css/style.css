@@ -3,8 +3,16 @@ html {
     height: 100%;   
 }
 
-body {
-    background-image: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgb(241, 241, 241) 59%, rgb(230, 230, 230) 100%);
+nav {
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.navbar-nav .dropdown-menu {
+  position: absolute;
 }
 
 .btn-buy{
@@ -22,6 +30,14 @@ body {
     height: 50px;
     width: 50px;
     background-color: red;
+}
+
+.login_box{
+    position: absolute;
+    background-color: rgba(0,0,0,0.85);
+    height: 50vh;
+    overflow: hidden;
+    visibility: hidden;
 }
 
 @media (max-width: 576px) {
